@@ -2,7 +2,7 @@ public class Switch {
     public static void main(String[] args) {
         int n = 3;
 
-            switch (18) {
+            switch (3) {
 
                     case 1:
                     System.out.println("calling");
