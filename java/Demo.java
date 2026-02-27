@@ -74,25 +74,58 @@
 
 
 
-class Mobile{
-    public void call() {
-        System.out.println("calling...");
-    }
-    public void message() {
-        System.out.println("messaging...");
-    }
-public int battery() {
-    return 78;
-}
-}
-public class Demo {
-    public static void main(String[] args) {
+// class Mobile{
+//     public void call() {
+//         System.out.println("calling...");
+//     }
+//     public void message() {
+//         System.out.println("messaging...");
+//     }
+// public int battery() {
+//     return 78;
+// }
+// }
+// public class Demo {
+//     public static void main(String[] args) {
         
-        Mobile m = new Mobile();
-        m.call();
-        m.message();
+//         Mobile m = new Mobile();
+//         m.call();
+//         m.message();
 
-        int b = m.battery();
-        System.out.println(b);
+//         int b = m.battery();
+//         System.out.println(b);
+//     }
+// }
+
+
+
+class Calculator {
+    public int add(int a, int b,int c) {
+       return a+b+c;
+       
     }
-}
+    public int add (int a,int b) {
+        return a+b;
+    }
+    public double Add (double a,double b) {
+        return a+b;
+    }
+ }
+ public class Demo {
+    public static void main(String[] args) {
+        Calculator cal = new Calculator();
+        
+        int r1 = cal.add(10,20,30); 
+        System.out.println(r1);
+
+        int r2 = cal.add(20,50);
+        System.out.println(r2);
+
+        double r3 = cal.Add(23.4,45.8);
+        System.out.println(r3);
+    }
+ }
+
+
+
+
