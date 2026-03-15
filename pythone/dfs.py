@@ -1,29 +1,23 @@
-from collections import deque
+def dfs(graph, node, visited=None):
+    if visited is None:
+        visited = set()
 
-def bfs(graph, start):
-    visited = set()
-    queue = deque([start])
+    visited.add(node)
+    print(node, end=" ")
 
-    visited.add(start)
-
-    while queue:
-        node = queue.popleft()
-        print(node, end=" ")
-
-        for neighbor in graph[node]:
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(neighbor)
+    for neighbor in graph[node]:
+        if neighbor not in visited:
+            dfs(graph, neighbor, visited) 
 
 
-# Graph definition
+# Graph
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
-    'C': ['F'],
     'D': [],
     'E': ['F'],
     'F': []
 }
 
-bfs(graph, 'A')
+
+dfs(graph, 'A'  , None)
