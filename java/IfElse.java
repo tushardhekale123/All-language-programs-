@@ -2,7 +2,6 @@
 import java.util.Scanner;
 
 
-//     }
 // }
 
 
@@ -214,24 +213,67 @@ import java.util.Scanner;
 // }  
 
 
-
-public class IfElse {
-    public static void main(String[] args) {
+// import java.util.Scanner;
+// public class IfElse {
+//     public static void main(String[] args) {
          
         
-        String username = "Tushar", password = "12345";
-        Scanner sc = new Scanner(System.in);
-        System.out.println("ID");
+//         String username = "Tushar", password = "12345";
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("ID");
 
-        String user = sc.nextLine();
-        System.out.println("Password");
-        String pass = sc.nextLine();
+//         String user = sc.nextLine();
+//         System.out.println("Password");
+//         String pass = sc.nextLine();
 
-        if (username.equals(user) && password.equals(pass)) {
-            System.out.println("Login Successful");
-        } else {
-            System.out.println("Invalid Credentials");
-        }
+//         if (username.equals(user) && password.equals(pass)) {
+//             System.out.println("Login Successful");
+//         } else {
+//             System.out.println("Invalid Credentials");
+//         }
       
+//     }
+//  }
+
+
+// public class IfElse {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the age");
+//         int n = sc.nextInt();
+
+//         if (n >=18) { 
+//             System.out.println("Adult");
+//         }
+//         else {
+//             System.out.println("Minor");
+//         }
+//     }
+// }
+
+  
+public class IfElse {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        while(true){
+        System.out.println("Enter age");
+        int n = sc.nextInt();
+         if (n <= 13) {
+            System.out.println("Child");
+         } else if (n <=18) {
+            System.out.println("teeneger");
+         } else {
+            System.out .println("Adult"); 
+            
+         }
+         System.out.println("yes/no");
+         String ch = sc.next();
+        
+          if (ch.equals("no")) {
+            break;
+          }
+        }
     }
- }
+}
