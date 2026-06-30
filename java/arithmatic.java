@@ -1,7 +1,4 @@
 
-import java.util.Scanner;
-
-
 // import java.util.Scanner;
 
 // public class arithmatic {
@@ -48,17 +45,36 @@ import java.util.Scanner;
 //     System.out.println("Sum: " + sum);
 //   }
 // }
-public class arithmatic {
-    public static void main (String[] args){
-        Scanner sc = new Scanner (System.in);
 
-        System.out.println("Enter first number");
-        int n = sc.nextInt();
+// import java.util.Scanner;
+// public class arithmatic {
+//     public static void main (String[] args){
+//         Scanner sc = new Scanner (System.in);
 
-        System.out.println ("Enter second number");
-        int m = sc.nextInt();
+//         System.out.println("Enter first number");
+//         int n = sc.nextInt();
 
-        int sum = n+m;
-        System.out.println(n+m);
+//         System.out.println ("Enter second number");
+//         int m = sc.nextInt();
+
+//         int sum = n+m;
+//         System.out.println(n+m);
+//     }
+// }
+
+import java.util.Scanner;
+public class arithmatic { 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        while (true) { System.out.println("Enter a number");
+        int n = sc.nextInt();   
+       if (n % 2 == 0) {
+        System.out.println ("Even");
+    }
+        else {
+            System.out.println ("Odd");
+        }
+       }
     }
 }

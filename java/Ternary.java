@@ -19,7 +19,7 @@ public class Ternary {
         int x = 10 ;
         int y = 5 ;
 
-        int Result = (x < y) ? x : y ;
+        int Result = (x > y) ? x : y ;
         System.out.println(Result);
     }
 }
