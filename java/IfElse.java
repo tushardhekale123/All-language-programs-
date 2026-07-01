@@ -1,8 +1,4 @@
 
-import java.util.Scanner;
-
-
-// }
 
 
 // public class IfElse {
@@ -253,27 +249,29 @@ import java.util.Scanner;
 // }
 
   
-public class IfElse {
-    public static void main (String[] args) {
-        Scanner sc = new Scanner(System.in);
+// public class IfElse {
+//     public static void main (String[] args) {
+//         Scanner sc = new Scanner(System.in);
 
-        while(true){
-        System.out.println("Enter age");
-        int n = sc.nextInt();
-         if (n <= 13) {
-            System.out.println("Child");
-         } else if (n <=18) {
-            System.out.println("teeneger");
-         } else {
-            System.out .println("Adult"); 
+//         while(true){
+//         System.out.println("Enter age");
+//         int n = sc.nextInt();
+//          if (n <= 13) {
+//             System.out.println("Child");
+//          } else if (n <=18) {
+//             System.out.println("teeneger");
+//          } else {
+//             System.out .println("Adult"); 
             
-         }
-         System.out.println("yes/no");
-         String ch = sc.next();
+//          }
+//          System.out.println("yes/no");
+//          String ch = sc.next();
         
-          if (ch.equals("no")) {
-            break;
-          }
-        }
-    }
-}
+//           if (ch.equals("no")) {
+//             break;
+//           }
+//         }
+//     }
+// }
+
+
