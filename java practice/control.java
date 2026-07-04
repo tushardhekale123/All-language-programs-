@@ -1,3 +1,4 @@
+
 // class control {
 //     public static void main (String [] args){
 //         System.out.println("Hello World");
@@ -75,3 +76,55 @@
 // }
 
 
+
+
+// import java.util.Scanner;
+// class control {
+//     public static void main (String [] args){
+//          Scanner sc = new Scanner(System.in);
+         
+//          while (true) {
+//          System.out.println("Enter no = ");
+//          int n = sc.nextInt();
+
+//             if (n%2==0){
+//                 System.out.println(n + " is even");
+//             } else {
+//                 System.out.println(n + " is odd");
+
+                
+//             } System.out.println("yes/no");
+//                 String ch = sc.next();  
+
+//                 if (ch.equals("no"))
+//                 break;
+//          }
+//     }
+// }
+
+
+import java.util.Scanner;
+class control {
+    public static void main (String [] args) {
+
+        while (true) {
+        Scanner sc = new Scanner(System.in);
+        int n = 0;
+        System.out.println("Enter no = ");
+        int a = sc.nextInt();   
+
+        if (n == a){
+            System.out.println("no is zero");
+        } else if (a > 0) {
+            System.out.println("no is positive");
+        } else {
+            System.out.println("no is negative");
+          }
+          System.out.println("yes/no");
+          String ch = sc.next();
+
+          if (ch.equals("no"))
+          break;
+        }
+    }
+}
