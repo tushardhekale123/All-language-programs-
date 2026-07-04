@@ -103,28 +103,43 @@
 // }
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// class control {
+//     public static void main (String [] args) {
+
+//         while (true) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = 0;
+//         System.out.println("Enter no = ");
+//         int a = sc.nextInt();   
+
+//         if (n == a){
+//             System.out.println("no is zero");
+//         } else if (a > 0) {
+//             System.out.println("no is positive");
+//         } else {
+//             System.out.println("no is negative");
+//           }
+//           System.out.println("yes/no");
+//           String ch = sc.next();
+
+//           if (ch.equals("no"))
+//           break;
+//         }
+//     }
+// }
+
+
 class control {
     public static void main (String [] args) {
+        int a = 10;
+        int b = 20;
+          System.out.println("Before swapping "+ "a = " + a + ", b = " + b);
 
-        while (true) {
-        Scanner sc = new Scanner(System.in);
-        int n = 0;
-        System.out.println("Enter no = ");
-        int a = sc.nextInt();   
+          int temp = a;
+          a = b;
+          b = temp;
 
-        if (n == a){
-            System.out.println("no is zero");
-        } else if (a > 0) {
-            System.out.println("no is positive");
-        } else {
-            System.out.println("no is negative");
-          }
-          System.out.println("yes/no");
-          String ch = sc.next();
-
-          if (ch.equals("no"))
-          break;
-        }
+          System.out.println("After swapping "+ "a = " + a + ", b = " + b);
     }
 }
