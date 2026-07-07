@@ -130,16 +130,44 @@
 // }
 
 
-class control {
-    public static void main (String [] args) {
-        int a = 10;
-        int b = 20;
-          System.out.println("Before swapping "+ "a = " + a + ", b = " + b);
+// class control {
+//     public static void main (String [] args) {
+//         int a = 10;
+//         int b = 20;
+//           System.out.println("Before swapping "+ "a = " + a + ", b = " + b);
 
-          int temp = a;
-          a = b;
-          b = temp;
+//           int temp = a;
+//           a = b;
+//           b = temp;
 
-          System.out.println("After swapping "+ "a = " + a + ", b = " + b);
-    }
-}
+//           System.out.println("After swapping "+ "a = " + a + ", b = " + b);
+//     }
+// }
+
+
+
+// import java.util.Scanner;
+
+// class control {
+//     public static void main (String [] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter no = ");
+//         int n = sc.nextInt();
+//         System.out.println("Enter no = ");
+//         int m = sc.nextInt();
+//         System.out.println("Enter no = ");
+//         int k = sc.nextInt();
+
+//         if (n > m && n > k){
+//             System.out.println(n + " is largest");
+//         }
+//         else if (m > n && m > k){
+//             System.out.println(m + " is largest");
+//         }
+//         else {
+//             System.out.println(k + " is largest");
+//         }
+
+//     }
+// }
