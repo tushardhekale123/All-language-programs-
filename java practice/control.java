@@ -210,25 +210,67 @@
 //     }
 // }
 
+
+
+// import java.util.Scanner;
+
+// class control {
+//     public static void main (String [] args) {
+//         while (true) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter year  = ");
+//         int year = sc.nextInt();
+
+//         if ((year % 400 == 0) || (year % 100 != 0 && year % 4 == 0)) {
+//             System.out.println(year + " is a leap year");
+//         } else {
+//             System.out.println(year + " is not a leap year");
+//         }
+//         System.out.println("yes/no");
+//         String ch = sc.next();
+//         if (ch.equals("no"))
+//         break;
+//         }
+//     }
+// }
+
 import java.util.Scanner;
 
 class control {
     public static void main (String [] args) {
-        while (true) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner (System.in);
 
-        System.out.println("Enter year  = ");
-        int year = sc.nextInt();
+        System.out.println("Enter no = ");
+        int n = sc.nextInt();   
+        System.out.println("Enter no = ");
+        int m = sc.nextInt();
 
-        if ((year % 400 == 0) || (year % 100 != 0 && year % 4 == 0)) {
-            System.out.println(year + " is a leap year");
-        } else {
-            System.out.println(year + " is not a leap year");
-        }
-        System.out.println("yes/no");
-        String ch = sc.next();
-        if (ch.equals("no"))
-        break;
+        System.out.println("choose operation: ");
+        System.out.println("1. +");
+        System.out.println("2. -");   
+        System.out.println("3. *");
+        System.out.println("4. /");
+
+        int choose = sc.nextInt();
+
+        switch (choose) {
+            case 1:
+                System.out.println("Sum = " + (n + m));
+                break;
+            case 2:
+                System.out.println("Difference = " + (n - m));
+                break;
+            case 3:
+                System.out.println("Product = " + (n * m));
+                break;
+            case 4:
+                if (m != 0) {
+                    System.out.println("Quotient = " + (n / m));
+                } else {
+                    System.out.println("Error: Division by zero");
+                }
+                break;
         }
     }
-}
+ }
