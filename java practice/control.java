@@ -171,3 +171,41 @@
 
 //     }
 // }
+
+
+
+
+import java.util.Scanner;
+class control {
+    public static void main (String [] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter mark of subject 1: ");
+        int sub1 = sc.nextInt();
+        System.out.println("Enter mark of subject 2: ");
+        int sub2 = sc.nextInt();
+        System.out.println("Enter mark of subject 3: ");
+        int sub3 = sc.nextInt();
+        System.out.println("Enter mark of subject 4: ");
+        int sub4 = sc.nextInt();
+        System.out.println("Enter mark of subject 5: ");
+        int sub5 = sc.nextInt();
+         
+        int total = sub1 + sub2 + sub3 + sub4 + sub5;
+        System.out.println("Total marks: " + total);
+        double Percentage = total / 5.0;
+        System.out.println("Percentage: " + Percentage);
+
+        if (Percentage >= 90) {
+            System.out.println("Grade: A");
+        } else if (Percentage >= 80) {
+            System.out.println("Grade: B");
+        } else if (Percentage >= 70) {
+            System.out.println("Grade: C");
+        } else if (Percentage >= 60) {
+            System.out.println("Grade: D");
+        } else {
+            System.out.println("Grade: F");
+        }
+    }
+}
