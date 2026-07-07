@@ -235,42 +235,75 @@
 //     }
 // }
 
-import java.util.Scanner;
 
+
+
+// import java.util.Scanner;
+
+// class control {
+//     public static void main (String [] args) {
+//         Scanner sc = new Scanner (System.in);
+
+//         System.out.println("Enter no = ");
+//         int n = sc.nextInt();   
+//         System.out.println("Enter no = ");
+//         int m = sc.nextInt();
+
+//         System.out.println("choose operation: ");
+//         System.out.println("1. +");
+//         System.out.println("2. -");   
+//         System.out.println("3. *");
+//         System.out.println("4. /");
+
+//         int choose = sc.nextInt();
+
+//         switch (choose) {
+//             case 1:
+//                 System.out.println("Sum = " + (n + m));
+//                 break;
+//             case 2:
+//                 System.out.println("Difference = " + (n - m));
+//                 break;
+//             case 3:
+//                 System.out.println("Product = " + (n * m));
+//                 break;
+//             case 4:
+//                 if (m != 0) {
+//                     System.out.println("Quotient = " + (n / m));
+//                 } else {
+//                     System.out.println("Error: Division by zero");
+//                 }
+//                 break;
+//         }
+//     }
+//  }
+
+
+
+// import java.util.Scanner;
+// class control {
+//     public static void main (String [] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Table  no = ");
+//         int n = sc.nextInt();
+
+//         for (int i = 1; i <= 10; i++) {
+//             System.out.println(n + " * " + i + " = " + (n * i));
+//         }
+//     }
+// }
+
+import java.util.Scanner;
 class control {
     public static void main (String [] args) {
-        Scanner sc = new Scanner (System.in);
-
+        Scanner sc = new Scanner(System.in);
+       
         System.out.println("Enter no = ");
-        int n = sc.nextInt();   
-        System.out.println("Enter no = ");
-        int m = sc.nextInt();
+        int n = sc.nextInt();
 
-        System.out.println("choose operation: ");
-        System.out.println("1. +");
-        System.out.println("2. -");   
-        System.out.println("3. *");
-        System.out.println("4. /");
-
-        int choose = sc.nextInt();
-
-        switch (choose) {
-            case 1:
-                System.out.println("Sum = " + (n + m));
-                break;
-            case 2:
-                System.out.println("Difference = " + (n - m));
-                break;
-            case 3:
-                System.out.println("Product = " + (n * m));
-                break;
-            case 4:
-                if (m != 0) {
-                    System.out.println("Quotient = " + (n / m));
-                } else {
-                    System.out.println("Error: Division by zero");
-                }
-                break;
+        for (int i = 1; i <= n; i++ ){
+            System.out.println(i);
         }
     }
- }
+}
