@@ -311,21 +311,50 @@
 //     }
 // }
 
+
+
+// import java.util.Scanner;
+// class control {
+//     public static void main (String [] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter no = ");
+//         int n = sc.nextInt();
+
+//         int reverse = 0;
+
+//         while (n != 0) {
+//             int digit = n % 10;
+//             reverse = reverse * 10 + digit;
+//             n = n / 10;
+//         }
+//         System.out.println("Reverse = " + reverse);
+//     }
+// }
+
+
 import java.util.Scanner;
 class control {
     public static void main (String [] args) {
+        while (true) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter no = ");
-        int n = sc.nextInt();
+        long n = sc.nextLong();
 
-        int reverse = 0;
-
-        while (n != 0) {
-            int digit = n % 10;
-            reverse = reverse * 10 + digit;
-            n = n / 10;
+        int count = 0;
+        while (n != 0){
+            n = n/10;
+            count++;
         }
-        System.out.println("Reverse = " + reverse);
+        System.out.println("Count of digits = " + count);
+
+        System.out.println("yes/no");
+    String ch = sc.next();
+    if (ch.equals("no"))
+    break;
+
+    }
+    
     }
 }
