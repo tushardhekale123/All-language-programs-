@@ -363,26 +363,50 @@
 
 
 
+
+
+// import java.util.Scanner;
+// class control {
+//     public static void main (String [] args) {
+//         Scanner sc = new Scanner (System.in);
+
+//         System.out.println("Enter no = ");
+//         int n = sc.nextInt();
+        
+//         int original = n;
+//         int sum = 0;
+
+//         while(n != 0) {
+//             int digit = n % 10;
+//             sum = sum * 10 + digit;
+//             n = n / 10;
+//         }
+//         if (sum == original) {
+//                 System.out.println("Palindrome");
+//             } else {
+//                 System.out.println("Not Palindrome");
+//             }
+//     }
+// }
+
+
 import java.util.Scanner;
 class control {
-    public static void main (String [] args) {
-        Scanner sc = new Scanner (System.in);
+    public static void main (String [] args ) { 
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter no = ");
         int n = sc.nextInt();
-        
-        int original = n;
-        int sum = 0;
 
-        while(n != 0) {
-            int digit = n % 10;
-            sum = sum * 10 + digit;
-            n = n / 10;
+        int first = 0;
+        int second = 1;
+
+        for (int i = 1; i<= n; i++) {
+            System.out.print(first + " ");
+        
+        int next = first + second;
+        first = second;
+        second = next;
         }
-        if (sum == original) {
-                System.out.println("Palindrome");
-            } else {
-                System.out.println("Not Palindrome");
-            }
     }
 }
