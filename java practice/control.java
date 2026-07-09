@@ -333,28 +333,56 @@
 // }
 
 
+
+
+// import java.util.Scanner;
+// class control {
+//     public static void main (String [] args) {
+//         while (true) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter no = ");
+//         long n = sc.nextLong();
+
+//         int count = 0;
+//         while (n != 0){
+//             n = n/10;
+//             count++;
+//         }
+//         System.out.println("Count of digits = " + count);
+
+//         System.out.println("yes/no");
+//     String ch = sc.next();
+//     if (ch.equals("no"))
+//     break;
+
+//     }
+    
+//     }
+// }
+
+
+
 import java.util.Scanner;
 class control {
     public static void main (String [] args) {
-        while (true) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner (System.in);
 
         System.out.println("Enter no = ");
-        long n = sc.nextLong();
+        int n = sc.nextInt();
+        
+        int original = n;
+        int sum = 0;
 
-        int count = 0;
-        while (n != 0){
-            n = n/10;
-            count++;
+        while(n != 0) {
+            int digit = n % 10;
+            sum = sum * 10 + digit;
+            n = n / 10;
         }
-        System.out.println("Count of digits = " + count);
-
-        System.out.println("yes/no");
-    String ch = sc.next();
-    if (ch.equals("no"))
-    break;
-
-    }
-    
+        if (sum == original) {
+                System.out.println("Palindrome");
+            } else {
+                System.out.println("Not Palindrome");
+            }
     }
 }
