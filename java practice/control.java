@@ -1,4 +1,8 @@
 
+import java.util.Random;
+import java.util.Scanner;
+
+
 
 // class control {
 //     public static void main (String [] args){
@@ -508,62 +512,92 @@
 // }
 
 
-import java.util.Scanner;
+
+
+// import java.util.Scanner;
+// class control {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in) ;
+
+//         int choice;
+//         Double num1,num2,result;
+        
+//         while (true) {
+//         System.out.println("------Calculator Manu-------");
+//         System.out.println("1. Addition");
+//         System.out.println("2. Substraction");
+//         System.out.println("3. Multiplication");
+//         System.out.println("4. Dividation");
+//         System.out.println("Enter choise ");
+//         choice = sc.nextInt();
+
+//         switch (choice) {
+        
+//         case 1:
+//         System.out.println("Enter no = ");
+//         num1 = sc.nextDouble();
+//         System.out.println("Enter no = ");
+//         num2 = sc.nextDouble();
+//         result = num1 + num2 ;
+//         System.out.println(result);
+//         break;
+
+//         case 2:
+//         System.out.println("Emter no = ");
+//         num1 = sc.nextDouble();
+//         System.out.println("Emter no = ");
+//         num2 = sc.nextDouble();
+//         result = num1-num2;
+//         System.out.println(result);
+//         break;
+
+//         case 3:
+//         System.out.println("Emter no = ");
+//         num1 = sc.nextDouble();
+//         System.out.println("Emter no = ");
+//         num2 = sc.nextDouble();
+//         result = num1*num2;
+//         System.out.println(result);
+//         break;
+
+//         case 4:
+//         System.out.println("Emter no = ");
+//         num1 = sc.nextDouble();
+//         System.out.println("Emter no = ");
+//         num2 = sc.nextDouble();
+//         result = num1/num2;
+//         System.out.println(result);
+//         break;
+//         }
+//      }
+
+//    }
+// }
+
+
+
 class control {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in) ;
+        Scanner sc = new Scanner(System.in);
+        Random r = new Random();
 
-        int choice;
-        Double num1,num2,result;
-        
-        while (true) {
-        System.out.println("------Calculator Manu-------");
-        System.out.println("1. Addition");
-        System.out.println("2. Substraction");
-        System.out.println("3. Multiplication");
-        System.out.println("4. Dividation");
-        System.out.println("Enter choise ");
-        choice = sc.nextInt();
+        int secret = r.nextInt(100);
+        int guess;
 
-        switch (choice) {
-        
-        case 1:
-        System.out.println("Enter no = ");
-        num1 = sc.nextDouble();
-        System.out.println("Enter no = ");
-        num2 = sc.nextDouble();
-        result = num1 + num2 ;
-        System.out.println(result);
-        break;
+        while (true) { 
+        System.out.println("guess the no");
+        guess = sc.nextInt();
 
-        case 2:
-        System.out.println("Emter no = ");
-        num1 = sc.nextDouble();
-        System.out.println("Emter no = ");
-        num2 = sc.nextDouble();
-        result = num1-num2;
-        System.out.println(result);
-        break;
-
-        case 3:
-        System.out.println("Emter no = ");
-        num1 = sc.nextDouble();
-        System.out.println("Emter no = ");
-        num2 = sc.nextDouble();
-        result = num1*num2;
-        System.out.println(result);
-        break;
-
-        case 4:
-        System.out.println("Emter no = ");
-        num1 = sc.nextDouble();
-        System.out.println("Emter no = ");
-        num2 = sc.nextDouble();
-        result = num1/num2;
-        System.out.println(result);
-        break;
+        if (secret == guess) {
+            System.out.println("Congratulations! You guessed the correct number.");
+            break;
         }
-     }
-
-   }
+        else if (secret >= guess) {
+            System.out.println("Too Low! Try Again.");
+        }
+        else if (secret <= guess) {
+            System.out.println("Too High! Try Again.");
+           }
+        }
+    }
 }
