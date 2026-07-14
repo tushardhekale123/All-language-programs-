@@ -1,4 +1,5 @@
 
+
 // class control {
 //     public static void main (String [] args){
 //         System.out.println("Hello World");
@@ -489,19 +490,80 @@
 
 
 
+// import java.util.Scanner;
+// class control {
+//     public static void main (String [] args) {
+//         Scanner sc = new Scanner (System.in);
+
+//         System.out.println("Enter no = ");
+//         int n = sc.nextInt();
+
+
+//         int fact = 1;
+//         for (int i=1; i<=n; i++){
+//             fact = fact * i;
+//         }
+//         System.out.println(fact);
+//     }
+// }
+
+
 import java.util.Scanner;
 class control {
-    public static void main (String [] args) {
-        Scanner sc = new Scanner (System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in) ;
 
+        int choice;
+        Double num1,num2,result;
+        
+        while (true) {
+        System.out.println("------Calculator Manu-------");
+        System.out.println("1. Addition");
+        System.out.println("2. Substraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Dividation");
+        System.out.println("Enter choise ");
+        choice = sc.nextInt();
+
+        switch (choice) {
+        
+        case 1:
         System.out.println("Enter no = ");
-        int n = sc.nextInt();
+        num1 = sc.nextDouble();
+        System.out.println("Enter no = ");
+        num2 = sc.nextDouble();
+        result = num1 + num2 ;
+        System.out.println(result);
+        break;
 
+        case 2:
+        System.out.println("Emter no = ");
+        num1 = sc.nextDouble();
+        System.out.println("Emter no = ");
+        num2 = sc.nextDouble();
+        result = num1-num2;
+        System.out.println(result);
+        break;
 
-        int fact = 1;
-        for (int i=1; i<=n; i++){
-            fact = fact * i;
+        case 3:
+        System.out.println("Emter no = ");
+        num1 = sc.nextDouble();
+        System.out.println("Emter no = ");
+        num2 = sc.nextDouble();
+        result = num1*num2;
+        System.out.println(result);
+        break;
+
+        case 4:
+        System.out.println("Emter no = ");
+        num1 = sc.nextDouble();
+        System.out.println("Emter no = ");
+        num2 = sc.nextDouble();
+        result = num1/num2;
+        System.out.println(result);
+        break;
         }
-        System.out.println(fact);
-    }
+     }
+
+   }
 }
