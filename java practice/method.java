@@ -87,11 +87,50 @@
 
 // problem solve for PDF in JAVA METHOD
 
+
+// Write a method to print Hello World. 
+
+// class method {
+//     static void main() {
+//         System.out.println("Hello");
+//     }
+//     public static void main(String[] args) {
+//         main ();
+//     }
+// }
+
+
+
+//  Call the same method three times.
+
+// class method {
+//     static void main() {
+//         for (int i=1; i<=3; i++) {
+//             System.out.println("Hello World");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         main();
+//     }
+// }
+
+
+
+
+
+//  Create two methods and call both.
+
+
 class method {
-    static void main() {
-        System.out.println("Hello");
+    static void add (int a, int b) {
+        System.out.println(a+b);
+    }
+    static void add(int a, int b, int c) {
+        System.out.println(a+b+c);
     }
     public static void main(String[] args) {
-        main ();
+        add(78,98,98);
+        add(57,564,6);
+        add(45,45);
     }
 }
