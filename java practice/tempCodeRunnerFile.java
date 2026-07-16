@@ -1,20 +1,9 @@
-import java.util.Scanner;
-// class control {
-//     public static void main (String [] args ) { 
-//         Scanner sc = new Scanner(System.in);
-
-//         System.out.println("Enter no = ");
-//         int n = sc.nextInt();
-
-//         int first = 0;
-//         int second = 1;
-
-//         for (int i = 1; i<= n; i++) {
-//             System.out.print(first + " ");
-        
-//         int next = first + second;
-//         first = second;
-//         second = next;
-//         }
-//     }
-// }
+class method {
+    static void add(int a, int b) {
+        return a + b;        
+    }
+    public static void main (String [] args){
+        int ans = add(45,65);
+        System.out.println(ans);
+    }
+}
