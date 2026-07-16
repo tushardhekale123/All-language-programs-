@@ -27,3 +27,6 @@ graph = {
 }
 
 bfs(graph, 'A')
+
+
+bit manipulation
