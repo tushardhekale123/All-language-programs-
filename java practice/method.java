@@ -260,19 +260,37 @@
 
 //  Overload show(int), show(double), show(String).
 
+// class method {
+//     static void main(int a) {
+//         System.out.println("Integer = " +a);
+//     }
+//     static void main(double a) {
+//         System.out.println("Double = "+a);
+//     }
+//     static void main(String a) {
+//         System.out.println("String = "+a);
+//     }
+//     public static void main(String[] args) {
+//         main(5);
+//         main("Tushar");
+//         main(67.7);
+//     }
+// }
+
+
+
+// Factorial using recursion.
+
 class method {
-    static void main(int a) {
-        System.out.println("Integer = " +a);
+    static int fact(int n) {
+        if (n == 0) {
+            return 1;
+        }
+
+        return n * fact(n - 1);
+        }
+        public static void main(String[]args) {
+            System.out.println(fact(5));
+
+        }
     }
-    static void main(double a) {
-        System.out.println("Double = "+a);
-    }
-    static void main(String a) {
-        System.out.println("String = "+a);
-    }
-    public static void main(String[] args) {
-        main(5);
-        main("Tushar");
-        main(67.7);
-    }
-}
