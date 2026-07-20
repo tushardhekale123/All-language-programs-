@@ -243,15 +243,36 @@
 
 //  Overload area() for square and rectangle.
 
+// class method {
+//     static int area (int side){
+//         return  side*side;
+//     }
+//     static int area(int length, int width) {
+//         return length*width;
+//     }
+//     public static void main(String[] args) {
+//         System.out.println(area(4));
+//         System.out.println(area(5,8));
+//     }
+// }
+
+
+
+//  Overload show(int), show(double), show(String).
+
 class method {
-    static int area (int side){
-        return  side*side;
+    static void main(int a) {
+        System.out.println("Integer = " +a);
     }
-    static int area(int length, int width) {
-        return length*width;
+    static void main(double a) {
+        System.out.println("Double = "+a);
+    }
+    static void main(String a) {
+        System.out.println("String = "+a);
     }
     public static void main(String[] args) {
-        System.out.println(area(4));
-        System.out.println(area(5,8));
+        main(5);
+        main("Tushar");
+        main(67.7);
     }
 }
