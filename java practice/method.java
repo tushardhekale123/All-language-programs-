@@ -225,16 +225,33 @@
 
 // Overload display(String) and display(String,int)
 
+// class method {
+//     static void display(String name) {
+//         System.out.println(name);
+//     }
+//     static void display(String name,int age) {
+//         System.out.println( name );
+//         System.out.println(age);
+//     }
+//     public static void main(String[] args) {
+//         display("Tushar");
+//         display("Tushar",22);
+//     }
+// }
+
+
+
+//  Overload area() for square and rectangle.
+
 class method {
-    static void display(String name) {
-        System.out.println(name);
+    static int area (int side){
+        return  side*side;
     }
-    static void display(String name,int age) {
-        System.out.println( name );
-        System.out.println(age);
+    static int area(int length, int width) {
+        return length*width;
     }
     public static void main(String[] args) {
-        display("Tushar");
-        display("Tushar",22);
+        System.out.println(area(4));
+        System.out.println(area(5,8));
     }
 }

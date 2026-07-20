@@ -1,8 +1,4 @@
 
-import java.util.Scanner;
-
-
-//     public static void main (String [] args){
 //         System.out.println("Hello World");
 //     }
 // }
@@ -600,14 +596,15 @@ import java.util.Scanner;
 // }
 
 
-class control{
-    public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-       System.out.println("enter v for a");
-       int a= sc.nextInt();
-       System.err.println("value for b");
-       int b = sc.nextInt();
-       int add=a+b;
-       System.out.println("Addition"+add);
-}
-}
+// class control{
+//     public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("enter v for a");
+//        int a= sc.nextInt();
+//        System.err.println("value for b");
+//        int b = sc.nextInt();
+//        int add=a+b;
+//        System.out.println("Addition"+add);
+// }
+// }
+
