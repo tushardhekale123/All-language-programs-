@@ -1,10 +1,7 @@
 
-import java.util.Random;
 import java.util.Scanner;
 
 
-
-// class control {
 //     public static void main (String [] args){
 //         System.out.println("Hello World");
 //     }
@@ -576,28 +573,41 @@ import java.util.Scanner;
 
 
 
-class control {
+// class control {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         Random r = new Random();
+
+//         int secret = r.nextInt(100);
+//         int guess;
+
+//         while (true) { 
+//         System.out.println("guess the no");
+//         guess = sc.nextInt();
+
+//         if (secret == guess) {
+//             System.out.println("Congratulations! You guessed the correct number.");
+//             break;
+//         }
+//         else if (secret >= guess) {
+//             System.out.println("Too Low! Try Again.");
+//         }
+//         else if (secret <= guess) {
+//             System.out.println("Too High! Try Again.");
+//            }
+//         }
+//     }
+// }
+
+
+class control{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Random r = new Random();
-
-        int secret = r.nextInt(100);
-        int guess;
-
-        while (true) { 
-        System.out.println("guess the no");
-        guess = sc.nextInt();
-
-        if (secret == guess) {
-            System.out.println("Congratulations! You guessed the correct number.");
-            break;
-        }
-        else if (secret >= guess) {
-            System.out.println("Too Low! Try Again.");
-        }
-        else if (secret <= guess) {
-            System.out.println("Too High! Try Again.");
-           }
-        }
-    }
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter v for a");
+       int a= sc.nextInt();
+       System.err.println("value for b");
+       int b = sc.nextInt();
+       int add=a+b;
+       System.out.println("Addition"+add);
+}
 }

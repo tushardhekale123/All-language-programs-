@@ -1,3 +1,4 @@
+
 // class  method {
 //      static void Hello() {
 //         for (int i=1; i<=3; i++) {
@@ -120,17 +121,120 @@
 
 //  Create two methods and call both.
 
+// class method {
+//     static void sum (int a, int b) {
+//         System.out.println(a+b);
+//     }
+//     static void add(int a, int b, int c) {
+//         System.out.println(a+b+c);
+//     }
+//     public static void main(String[] args) {
+        
+//         sum(45,45);
+//     }
+// }
+
+
+
+
+//  Write a method to print Welcome.
+
+// class method {
+//     static void main () {
+//         System.out.println("Welcome");
+//     }
+//     public static void main(String[] args) {
+//         main();
+//     }
+// }
+
+
+//  Write square(int n).
+
+// class method {
+//     static void main (int n) {
+//         System.out.println(n*n);
+//     }
+//     public static void main(String[] args) {
+//         main(10);
+//     }
+// }
+
+
+// Write max(int a,int b)
+
+// import java.util.Scanner;
+// class method {
+//     static void main(int  a, int b) {
+//         if (a<b){
+//             System.out.println(b);
+//         }
+//         else {
+//             System.out.println(a);
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("enter ");
+//         int a = sc.nextInt();
+
+//         System.out.println("enter");
+//         int b = sc.nextInt();
+
+//         main(a,b);
+//     }
+// }
+
+
+
+// Write a method returning cube.
+
+// class method {
+//     static int cube(int n ) {
+//         return n*n*n;
+//     }
+//     public static void main (String[]args) {
+//         int ans = cube(5);
+//         System.out.println(ans);
+//     }
+// }
+
+
+// Return largest of three numbers.
+
+// class method {
+//     static int larg (int a, int b, int c) {
+//         if (a>b && a>c) {
+//             return a;
+//         }
+//         else if(b>a && b>c){
+//             return b;
+//         }
+//         else
+//         return c;
+//     }
+//     public static void main(String[] args) {
+//         int ans = larg (34,67,12);
+//         System.out.println(ans);
+//     }
+// }
+
+
+
+
+// Overload display(String) and display(String,int)
 
 class method {
-    static void add (int a, int b) {
-        System.out.println(a+b);
+    static void display(String name) {
+        System.out.println(name);
     }
-    static void add(int a, int b, int c) {
-        System.out.println(a+b+c);
+    static void display(String name,int age) {
+        System.out.println( name );
+        System.out.println(age);
     }
     public static void main(String[] args) {
-        add(78,98,98);
-        add(57,564,6);
-        add(45,45);
+        display("Tushar");
+        display("Tushar",22);
     }
 }
