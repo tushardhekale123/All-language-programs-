@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 
+
 // public class arrya {
 //     public static void main(String[]args) {
 //         int marks [] = new int[5]; 
@@ -31,3 +32,24 @@ import java.util.Scanner;
 //         }
 //     }
 // }
+
+
+class arrays{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+    
+        System.out.println("Enter array length = ");
+        int n = sc.nextInt();
+        int number[] = new int[n];
+
+        System.out.println("Enter marks = ");
+        for (int i=0; i<n; i++){
+        number[i] = sc.nextInt();
+       }
+       System.out.println("Arraya element ");
+       for (int i=0; i<n; i++) {
+        System.out.println(number[i]);
+       }
+       sc.close();
+    }
+}
