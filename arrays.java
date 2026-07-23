@@ -56,7 +56,7 @@ class arrays {
         int value[] = new int [12];
 
         value [0]= 20;
-        value [1]= 50;
+        value [1]= 45;
         value [2]= 45;
         value [3]= 60;
 
