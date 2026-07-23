@@ -58,7 +58,7 @@ class arrays {
         value [0]= 20;
         value [1]= 45;
         value [2]= 45;
-        value [3]= 60;
+        value [3]= 50;
 
         int Sum = value[2] + value[1];
 
