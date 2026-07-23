@@ -60,7 +60,7 @@ class arrays {
         value [2]= 45;
         value [3]= 60;
 
-        int Sum = value[0] + value[1];
+        int Sum = value[2] + value[1];
 
         System.out.println(Sum);
     }
