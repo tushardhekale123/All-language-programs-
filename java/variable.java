@@ -34,7 +34,6 @@ public class variable {
         System.out.println(n);
         System.out.println(n);
         System.out.println(name);
-        System.out.println(name);
-        System.out.println(name);
+        
     }
 }
