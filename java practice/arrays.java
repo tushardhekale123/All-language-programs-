@@ -607,37 +607,79 @@
 //     }
 // }
 
+// import java.util.Scanner;
+
+// class arrays {
+//     public static void main (String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Size");
+//         int n = sc.nextInt();
+
+//         int arr[] = new int [n];
+
+//         System.out.println("Enter Element");
+
+//         for (int i=0; i<n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         for (int i=0; i<n; i++) {
+//             int min = i;
+
+//             for (int j=i+1; j<n; j++) {
+//                 if (arr[j] < arr[min]) {
+//                     min =j;
+//                 }
+//             }
+//             int temp = arr[i];
+//             arr[i] = arr[min];
+//             arr[min] = temp;
+//         }
+//         System.out.println("Sorted Array");
+//         for (int i=0; i<n; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+
 import java.util.Scanner;
 
-class arrays {
-    public static void main (String[] args) {
+class Demo {
+
+    public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter Size");
+        System.out.print("Enter Size: ");
         int n = sc.nextInt();
 
-        int arr[] = new int [n];
+        int arr[] = new int[n];
+        boolean visited[] = new boolean[n];
 
-        System.out.println("Enter Element");
+        System.out.println("Enter Elements:");
 
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        for (int i=0; i<n; i++) {
-            int min = i;
 
-            for (int j=i+1; j<n; j++) {
-                if (arr[j] < arr[min]) {
-                    min =j;
+        for (int i = 0; i < n; i++) {
+
+            if (visited[i])
+                continue;
+
+            int count = 1;
+
+            for (int j = i + 1; j < n; j++) {
+
+                if (arr[i] == arr[j]) {
+                    count++;
+                    visited[j] = true;
                 }
             }
-            int temp = arr[i];
-            arr[i] = arr[min];
-            arr[min] = temp;
-        }
-        System.out.println("Sorted Array");
-        for (int i=0; i<n; i++) {
-            System.out.print(arr[i] + " ");
+
+            System.out.println(arr[i] + " = " + count);
         }
     }
 }
