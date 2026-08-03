@@ -17,11 +17,24 @@
 //     }
 // }
 
+// public class variable {
+//     public static void main ( String [] args) {
+//         int n = 12;
+//         String  name = "Tushar";
+//         System.out.println(n);
+//         System.out.println(name);
+//     }
+// }
+
+
 public class variable {
     public static void main ( String [] args) {
         int n = 12;
         String  name = "Tushar";
         System.out.println(n);
+        System.out.println(n);
+        System.out.println(name);
+        System.out.println(name);
         System.out.println(name);
     }
 }

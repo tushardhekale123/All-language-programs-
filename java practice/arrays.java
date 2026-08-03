@@ -432,3 +432,212 @@
 //         }
 //     }
 // }
+
+// import java.util.Scanner;
+
+// class arrays {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Size");
+//         int n = sc.nextInt();
+
+//         int arr [] = new int [n];
+
+//         System.out.println("Enter Element ");
+        
+//         for (int i=0; i< arr.length; i++) {
+//             arr [i] = sc.nextInt();
+//         }
+//         System.out.println("Enter Search Element ");
+//         int x = sc.nextInt();
+
+//         for (int i=0; i<n; i++) {
+
+//         if (arr[i] == x){
+//             System.out.println("Element Found of Index = " + (i+1));
+//         }
+//       }
+//     }
+// }
+
+
+// Binary Search
+
+// class arrays {
+//     public static void main(String[] args) {
+//         int arr [] = {10,20,30,40,50,60,70,90};
+
+//         int x = 60;
+
+//         int low = 0;
+//         int high = arr.length-1;
+
+//         while (low <= high) {
+//             int mid = (low + high) / 2;
+
+//             if (arr[mid] == x) {
+//                 System.out.println("Found at Index = " + (mid +1));
+//                 break;
+//             }
+//             else if (arr[mid] < x){
+//                 low = mid+1;
+//             }
+//             else {
+//             high = mid -1;
+//             }
+//         }
+//     }
+// }
+
+
+// import java.util.Scanner;
+// public class arrays {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Size");
+//         int n = sc.nextInt();
+
+//         int arr [] = new int [n];
+
+//         System.out.println("Enter Element ");
+//         for (int i = 0; i <= n-1; i++) {
+//             arr[i] = sc.nextInt();
+//             }
+//             System.out.println("Enter Search Element ");
+//             int x = sc.nextInt();
+
+//             int low = 0;
+//             int high = arr.length - 1;  
+
+//              while (low <= high) {
+//                 int mid = (low + high) /2;
+
+//                 if (arr[mid] == x) {
+//                     System.out.println("Element Found at Index = " + (mid + 1));
+//                     break;
+//                 }
+//                 else if (arr[mid] > x) {
+//                     high = mid - 1;
+//                 }
+//                 else {
+//                     low = mid + 1;  
+//                 }
+//              }
+//         }
+//     }
+
+
+
+// Bobble Sort
+
+// class arrays {
+//     public static void main (String [] args) {
+//         int arr [] = {10,50,30,20,40};
+
+//         for (int i=0; i<arr.length; i++) {
+
+//             for (int j=0; j<arr.length-1; j++) {
+
+//                 if (arr[j] > arr[j+1]) {
+//                     int temp = arr[j];
+//                     arr[j] = arr[j+1];
+//                     arr[j+1] = temp;
+//                 }
+//             }
+//         }
+//         for (int i=0; i<arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+
+// class arrays {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Size");
+//         int n = sc.nextInt();
+
+//         int arr[] = new int [n];
+
+//         System.out.println("Enter Element");
+
+//         for (int i=0; i<n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         for (int i=0; i<n; i++) {
+//             for (int j=0; j<n-1; j++) {
+//                 if (arr[j] > arr[j+1]) {
+//                     int temp = arr[j];
+//                     arr[j] = arr[j+1];
+//                     arr[j+1]= temp;
+//                 }
+//             }
+//         }
+//         for (int i=0; i<n; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+// Selection Sort
+
+// class arrays {
+//     public static void main (String[] args) {
+//         int arr[] = {50, 20, 40, 10, 30};
+//         for (int i=0; i<arr.length; i++) {
+//             int min = i;
+//             for (int j=i+1; j<arr.length; j++) {
+//                 if (arr[j] < arr[min]) {
+//                     min = j;
+//                 }
+//             }
+//             int temp = arr[i];
+//             arr[i] = arr[min];
+//             arr[min] = temp;    
+//         }
+//         for (int i=0; i<arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+import java.util.Scanner;
+
+class arrays {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Size");
+        int n = sc.nextInt();
+
+        int arr[] = new int [n];
+
+        System.out.println("Enter Element");
+
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i=0; i<n; i++) {
+            int min = i;
+
+            for (int j=i+1; j<n; j++) {
+                if (arr[j] < arr[min]) {
+                    min =j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
+        System.out.println("Sorted Array");
+        for (int i=0; i<n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
