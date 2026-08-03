@@ -56,9 +56,9 @@ public class logical {
         int y = 5;
         int a = 20; 
         int b = 15;
-        int c = 30;
 
         boolean result = x > y;
+        System.out.println(!result);
         System.out.println(!result);
     }
 }
