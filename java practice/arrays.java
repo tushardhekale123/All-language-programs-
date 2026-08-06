@@ -644,42 +644,84 @@
 
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Demo {
+// class Demo {
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter Size: ");
-        int n = sc.nextInt();
+//         System.out.print("Enter Size: ");
+//         int n = sc.nextInt();
 
-        int arr[] = new int[n];
-        boolean visited[] = new boolean[n];
+//         int arr[] = new int[n];
+//         boolean visited[] = new boolean[n];
 
-        System.out.println("Enter Elements:");
+//         System.out.println("Enter Elements:");
 
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
 
-        for (int i = 0; i < n; i++) {
+//         for (int i = 0; i < n; i++) {
 
-            if (visited[i])
-                continue;
+//             if (visited[i])
+//                 continue;
 
-            int count = 1;
+//             int count = 1;
 
-            for (int j = i + 1; j < n; j++) {
+//             for (int j = i + 1; j < n; j++) {
 
-                if (arr[i] == arr[j]) {
-                    count++;
-                    visited[j] = true;
-                }
-            }
+//                 if (arr[i] == arr[j]) {
+//                     count++;
+//                     visited[j] = true;
+//                 }
+//             }
 
-            System.out.println(arr[i] + " = " + count);
-        }
-    }
-}
+//             System.out.println(arr[i] + " = " + count);
+//         }
+//     }
+// }
+
+
+
+
+// 2D arrays
+
+// Basic Level
+// Print 2D Array (Matrix)
+// Input and Output of Matrix
+// Search an Element in Matrix
+// Sum of All Elements
+// Find Maximum Element
+// Find Minimum Element
+// Count Even and Odd Numbers
+// Print Row-wise
+// Print Column-wise
+// Row-wise Sum
+// Column-wise Sum
+// Average of Matrix Elements
+// Intermediate Level
+// Main Diagonal Elements
+// Secondary Diagonal Elements
+// Sum of Main Diagonal
+// Sum of Secondary Diagonal
+// Transpose of Matrix
+// Matrix Addition
+// Matrix Subtraction
+// Matrix Multiplication
+// Identity Matrix
+// Symmetric Matrix
+// Advanced Level
+// Upper Triangle Matrix
+// Lower Triangle Matrix
+// Boundary Elements of Matrix
+// Spiral Matrix
+// Rotate Matrix 90° Clockwise
+// Rotate Matrix 90° Anti-Clockwise
+// Row with Maximum Sum
+// Column with Maximum Sum
+// Saddle Point
+// Search in Sorted Matrix
+
