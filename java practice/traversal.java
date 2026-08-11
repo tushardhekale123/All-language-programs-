@@ -35,9 +35,6 @@
 // Find the largest and smallest element in one traversal.
 // Check whether an array is sorted or not.
 
-
-
-
 // elements using while loop.
 
 // class traversal {
@@ -51,7 +48,6 @@
 //         System.out.println();
 //     }
 // }
-
 
 // array elements in reverse order.
 
@@ -67,7 +63,7 @@
 // Print elements at even indexes.
 
 // class traversal {
-    
+
 //     public static void main (String [] args) {
 //         int arr[] = {1,2,3,4,5,6,7,8,9,10};
 //         for (int i = 0; i<arr.length; i++) {
@@ -78,7 +74,6 @@
 //     }
 // }
 
-
 // Print array elements with their indexes.
 
 // class traversal {
@@ -88,7 +83,6 @@
 //     }
 // }
 
-
 // class traversal {
 //     public static void main (String [] args) {
 //         int arr[] = {10,20,30,40,50,60,70,80,90,100};
@@ -96,23 +90,82 @@
 //     }
 // }
 
-
 // Count even and odd numbers.
 
-class traversal {
-    public static void main (String [] args) {
-        int arr[] = {1,2,3,4,5,6,7,8,9,10};
-        int even = 0;
-        int odd = 0;
+// class traversal {
+//     public static void main (String [] args) {
+//         int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//         int even = 0;
+//         int odd = 0;
 
-        for (int i=0; i<arr.length; i++) {
-            if (arr[i] % 2 == 0){
-                even++;
-            } else {
-                odd++;
+//         for (int i=0; i<arr.length; i++) {
+//             if (arr[i] % 2 == 0){
+//                 even++;
+//             } else {
+//                 odd++;
+//             }
+//         }
+//         System.out.println("Even numbers: " + even);
+//         System.out.println("Odd numbers: " + odd);
+//     }
+// }
+
+// Find second largest element.
+
+// class traversal {
+//     public static void main(String[] args) {
+//         int arr[] = { 100, 20, 30, 40, 50, 60, 70, 80, 90, 10 };
+//         int largest = arr[0];
+//         int secondLargest = arr[1];
+
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] > largest) {
+//                 secondLargest = largest;
+//                 largest = arr[i];
+//             } 
+//         }
+//         System.out.println("Second Largest Element: " + secondLargest);
+//     }
+// }
+
+
+// Find second largest element.
+
+// class traversal {
+//     public static void main(String[] args) {
+//         int arr[] = { 100, 20, 30, 40, 50, 60, 70, 80, 90, 10 };
+//         int largest = arr[0];
+//         int secondLargest = arr[1];
+
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] > largest) {
+//                 secondLargest = largest;
+//                 largest = arr[i];
+//             } else if (arr[i] > secondLargest && arr[i] != largest) {
+//                 secondLargest = arr[i];
+//             }
+//         }
+//         System.out.println("Second Largest Element: " + secondLargest);
+//     }
+// }
+
+
+
+
+class traversal {
+    public static void main(String[] args) {
+        int arr[] = { 100, 20, 30, 40, 50, 60, 70, 80, 90, 10 };
+        int largest = arr[0];
+        int secondLargest = arr[1];
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < largest) {
+                secondLargest = largest;
+                largest = arr[i];
+            } else if (arr[i] < secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
             }
         }
-        System.out.println("Even numbers: " + even);
-        System.out.println("Odd numbers: " + odd);
+        System.out.println("Second Largest Element: " + secondLargest);
     }
 }
