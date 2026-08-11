@@ -982,39 +982,60 @@
 
 // Secondary Diagonal Elements Sum
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// class arrays {
+//     public static void main (String []args) {
+//         Scanner sc = new Scanner (System.in);
+//          System.out.println("Enter Row Size");
+//          int row = sc.nextInt();    
+
+//          System.out.println("Enter Column Size");
+//          int col = sc.nextInt();
+
+//          int arr[][] = new int [row][col];
+
+//          System.out.println("Enter Element");
+//          for (int i=0; i<row; i++) {
+//              for (int j=0; j<col; j++) {
+//                  arr[i][j] = sc.nextInt();
+//              }
+//          }
+//          for (int i=0; i<row; i++) {
+//              for (int j=0; j<col; j++) {
+//                  if (i + j == arr.length -1) {
+//                      System.out.print(arr[i][j] + " ");
+//                  }
+//              }
+//          }
+//          int sum = 0;
+//          for (int i=0; i<row; i++) {
+//              for (int j=0; j<col; j++) {
+//                  if (i + j == arr.length -1) {
+//                      sum = sum + arr[i][j]; 
+//                  }
+//              }
+//              System.out.println("Sum of Secondary Diagonal Elements: " + sum);
+//          }
+//     }
+// }
+
+
+// Upper Triangle Matrix
+
 class arrays {
-    public static void main (String []args) {
-        Scanner sc = new Scanner (System.in);
-         System.out.println("Enter Row Size");
-         int row = sc.nextInt();    
+    public static void main(String[] args) {
+        int arr[][] = { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 } };
 
-         System.out.println("Enter Column Size");
-         int col = sc.nextInt();
-
-         int arr[][] = new int [row][col];
-
-         System.out.println("Enter Element");
-         for (int i=0; i<row; i++) {
-             for (int j=0; j<col; j++) {
-                 arr[i][j] = sc.nextInt();
-             }
-         }
-         for (int i=0; i<row; i++) {
-             for (int j=0; j<col; j++) {
-                 if (i + j == arr.length -1) {
-                     System.out.print(arr[i][j] + " ");
-                 }
-             }
-         }
-         int sum = 0;
-         for (int i=0; i<row; i++) {
-             for (int j=0; j<col; j++) {
-                 if (i + j == arr.length -1) {
-                     sum = sum + arr[i][j]; 
-                 }
-             }
-             System.out.println("Sum of Secondary Diagonal Elements: " + sum);
-         }
+        System.out.println("Upper Triangle Matrix: ");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j=0; j<arr.length; j++) {
+                if (j >= i ) {
+                    System.out.print(arr[i][j] + " ");
+                } else {
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
     }
 }
