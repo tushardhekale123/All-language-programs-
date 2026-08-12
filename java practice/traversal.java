@@ -173,24 +173,57 @@
 
 // Find frequency of every element.
 
+// class traversal {
+//     public static void main (String [] args) {
+//         int arr[] = {1,2,3,4,5,2,3,2,1,2,5,};
+
+//         boolean visited[] = new boolean[arr.length];
+
+//         for (int i=0; i<arr.length; i++) {
+//             if (visited[i] == true) {
+//                 continue;
+//             }
+//             int count = 1;
+//             for (int j=i+1; j<arr.length; j++) {
+//                 if (arr[i] == arr[j]) {
+//                     visited[j] = true;
+//                     count++;
+//                  }
+//             }
+//             System.out.println("Element " + arr[i] + " occurs " + count + " times");
+//         }
+//     }
+// }
+
+
+import java.util.Scanner;
 class traversal {
-    public static void main (String [] args) {
-        int arr[] = {1,2,3,4,5,2,3,2,1,2,5,};
+    public static void main (String []args) {
+        Scanner sc = new Scanner (System.in);
 
-        boolean visited[] = new boolean[arr.length];
+        System.out.print("Enter the size of the array: ");
+        int n = sc.nextInt();
 
-        for (int i=0; i<arr.length; i++) {
+        int arr[] = new int[n];
+
+        System.out.println("Enter the elements of the array: ");
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        boolean visited[] = new boolean[n];
+
+        for (int i=0; i<n; i++) {
             if (visited[i] == true) {
                 continue;
             }
             int count = 1;
-            for (int j=i+1; j<arr.length; j++) {
+            for (int j=i+1; j<n; j++) {
                 if (arr[i] == arr[j]) {
-                    visited[j] = true;
                     count++;
-                 }
+                    visited[j] = true;
+                }
             }
-            System.out.println("Element " + arr[i] + " occurs " + count + " times");
+            System.out.println(arr[i] + " = " + count);
         }
     }
 }
