@@ -233,23 +233,45 @@
 
 // Move all zeroes to the end.
 
-class traversal {
-    public static void main(String[] args) {
-        int arr[] = {0,5,0,5,3,4,0,1};
+// class traversal {
+//     public static void main(String[] args) {
+//         int arr[] = {0,5,0,5,3,4,0,1};
 
-        int index = 0;
-        for (int i=0; i<arr.length; i++) {
-            if (arr[i] != 0) {
-                arr[index] = arr[i];
-                index++;
+//         int index = 0;
+//         for (int i=0; i<arr.length; i++) {
+//             if (arr[i] != 0) {
+//                 arr[index] = arr[i];
+//                 index++;
+//             }
+//         }
+//         while (index < arr.length) {
+//             arr[index] = 0;
+//             index++;
+//         }
+//         for(int i=0; i<arr.length; i++) {
+//             System.out.println(arr[i]);
+//         }
+//     }
+// }
+
+
+// Check whether an array is sorted or not.
+
+class traversal {
+    public static void main (String[] args) {
+        int arr[] = {10,20,30,40,10};
+         boolean sorted = true;
+
+         for (int i=0; i<arr.length-1; i++) {
+            if (arr[i] > arr[i+1]) {
+                sorted = false;
+                break;
             }
-        }
-        while (index < arr.length) {
-            arr[index] = 0;
-            index++;
-        }
-        for(int i=0; i<arr.length; i++) {
-            System.out.println(arr[i]);
-        }
+         }
+         if (sorted) {
+            System.out.println("Arrays is sorted");
+         } else {
+            System.out.println("Arrays is Mot sorted");
+         }
     }
 }
