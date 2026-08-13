@@ -91,15 +91,25 @@
 //     }
 // }
 
-import java.util.Scanner;
-class string {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); 
-        String n = "Tuhsar Jitendra Dhekale";
+// import java.util.Scanner;
+// class string {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in); 
+//         String n = "Tuhsar Jitendra Dhekale";
 
-        System.out.println("Enter Word");
-        String m = sc.nextLine();
+//         System.out.println("Enter Word");
+//         String m = sc.nextLine();
 
-        System.out.println(n.contains(m));
-    }
-}    
+//         System.out.println(n.contains(m));
+//     }
+// }    
+
+// substring 
+
+// class string {
+//     public static void main(String[] args) {
+//         String name  = "Tushar";
+//         System.out.println(name.substring(1,3));
+//     }
+// }
+
