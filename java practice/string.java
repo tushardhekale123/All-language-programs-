@@ -174,3 +174,13 @@
 //         System.out.println(sb);
 //     }
 // }
+
+// reverse
+
+class string {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("I Love India");
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
