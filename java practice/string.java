@@ -40,3 +40,23 @@
 //  System.out.println(" = " + n.charAt(2));
 //   } 
 // }
+
+
+// toUpperCase()
+
+// class string {
+//     public static void main(String[] args) {
+//         String n = "Tushar";
+
+//         System.out.println(n.toUpperCase());
+//     }
+// }
+
+// toLowerCase
+
+class string {
+    public static void main(String[] args) {
+        String n = "TUSHAR";
+        System.out.println(n.toLowerCase());
+    }
+}
