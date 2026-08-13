@@ -113,3 +113,21 @@
 //     }
 // }
 
+
+// replace 
+
+// class string {
+//     public static void main(String[] args) {
+//         String n = "Tushar";
+//         System.out.println(n.replace('u','B'));
+//     }
+// }
+
+// indexOf
+
+// class string {
+//     public static void main(String[] args) {
+//         String n = "Tushar";
+//         System.out.println(n.indexOf('T'));
+//     }
+// }
