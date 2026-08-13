@@ -54,9 +54,30 @@
 
 // toLowerCase
 
-class string {
-    public static void main(String[] args) {
-        String n = "TUSHAR";
-        System.out.println(n.toLowerCase());
-    }
-}
+// class string {
+//     public static void main(String[] args) {
+//         String n = "TUSHAR";
+//         System.out.println(n.toLowerCase());
+//     }
+// }
+
+// equals
+
+// class string {
+//     public static void main(String[] args) {
+//         String a = "JAVA";
+//         String b = "java";
+
+//         System.out.println(a.equals(b));
+//     }
+// }
+
+// equalsIgnoreCase()
+ 
+// class string {
+//     public static void main(String[] args) {
+//         String a = "TUSHAR";
+//         String n = "tushar";
+//         System.out.println(a.equalsIgnoreCase(n));
+//     }
+// }
