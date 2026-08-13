@@ -147,10 +147,30 @@
 
 // insert()
 
-class string {
-    public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder("Java");
-        sb.insert(0,"DSA ");
-        System.out.println(sb);
-    }
-}
+// class string {
+//     public static void main(String[] args) {
+//         StringBuilder sb = new StringBuilder("Java");
+//         sb.insert(0,"DSA ");
+//         System.out.println(sb);
+//     }
+// }
+
+// Delete
+
+// class string {
+//     public static void main(String[] args) {
+//         StringBuilder sb = new StringBuilder("Hello Java");
+//         sb.delete(0,3);
+//         System.out.println(sb);
+//     }
+// }
+
+// deleteCharAt
+
+// class string {
+//     public static void main(String[] args) {
+//         StringBuilder sb = new StringBuilder("JVAA");
+//         sb.deleteCharAt(1);
+//         System.out.println(sb);
+//     }
+// }
