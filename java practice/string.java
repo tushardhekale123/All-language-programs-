@@ -81,3 +81,25 @@
 //         System.out.println(a.equalsIgnoreCase(n));
 //     }
 // }
+
+// contains
+
+// class string {
+//     public static void main(String[] args) {
+//         String n = "Java Programming";
+//         System.out.println(n.contains("Java"));
+//     }
+// }
+
+import java.util.Scanner;
+class string {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); 
+        String n = "Tuhsar Jitendra Dhekale";
+
+        System.out.println("Enter Word");
+        String m = sc.nextLine();
+
+        System.out.println(n.contains(m));
+    }
+}    
