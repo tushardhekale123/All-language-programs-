@@ -131,3 +131,26 @@
 //         System.out.println(n.indexOf('T'));
 //     }
 // }
+
+
+// ................StringBuilder.............
+
+// append()
+
+// class string {
+//     public static void main(String[] args) {
+//         StringBuilder n = new StringBuilder("Java");
+//         n.append("DSA");
+//         System.out.println(n);
+//     }
+// }
+
+// insert()
+
+class string {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Java");
+        sb.insert(0,"DSA ");
+        System.out.println(sb);
+    }
+}
