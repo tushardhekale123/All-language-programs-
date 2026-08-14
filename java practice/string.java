@@ -259,10 +259,21 @@
 
 // reverse
 
+// class string {
+//     public static void main(String[] args) {
+//         StringBuffer sb = new StringBuffer("I Love India");
+//         sb.reverse();
+//         System.out.println(sb);
+//     }
+// }
+
+
+// Delete
+
 class string {
     public static void main(String[] args) {
-        StringBuffer sb = new StringBuffer("I Love India");
-        sb.reverse();
+        StringBuffer sb = new StringBuffer("Hello Java");
+        sb.delete(0,3);
         System.out.println(sb);
     }
 }
