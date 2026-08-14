@@ -248,10 +248,21 @@
 
 // append()
 
+// class string {
+//     public static void main(String[] args) {
+//         StringBuffer n = new StringBuffer("Java");
+//         n.append("DSA");
+//         System.out.println(n);
+//     }
+// }
+
+
+// reverse
+
 class string {
     public static void main(String[] args) {
-        StringBuffer n = new StringBuffer("Java");
-        n.append("DSA");
-        System.out.println(n);
+        StringBuffer sb = new StringBuffer("I Love India");
+        sb.reverse();
+        System.out.println(sb);
     }
 }
