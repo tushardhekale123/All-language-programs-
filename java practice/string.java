@@ -238,10 +238,20 @@
 
 // insert()
 
+// class string {
+//     public static void main(String[] args) {
+//         StringBuffer sb = new StringBuffer("Java");
+//         sb.insert(0,"DSA ");
+//         System.out.println(sb);
+//     }
+// }
+
+// append()
+
 class string {
     public static void main(String[] args) {
-        StringBuffer sb = new StringBuffer("Java");
-        sb.insert(0,"DSA ");
-        System.out.println(sb);
+        StringBuffer n = new StringBuffer("Java");
+        n.append("DSA");
+        System.out.println(n);
     }
 }
