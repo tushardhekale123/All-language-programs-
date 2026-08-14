@@ -177,10 +177,42 @@
 
 // reverse
 
+// class string {
+//     public static void main(String[] args) {
+//         StringBuffer sb = new StringBuffer("I Love India");
+//         sb.reverse();
+//         System.out.println(sb);
+//     }
+// }
+
+// setCharAt
+
+// class string {
+//     public static void main(String[] args) {
+//         StringBuffer sb = new StringBuffer("Java");
+//         sb.setCharAt(0,'k');
+//         System.out.println(sb);
+//     }
+// }
+
+// length
+
+// class string {
+//     public static void main(String[] args) {
+//         StringBuilder sb = new StringBuilder("JAVA");
+//         System.out.println(sb.length());
+//     }
+// }
+
+
+// .............Buffer.............
+
+// insert
+
 class string {
     public static void main(String[] args) {
-        StringBuffer sb = new StringBuffer("I Love India");
-        sb.reverse();
+        StringBuffer sb = new StringBuffer("Hello Java");
+        sb.insert(0,"navya ");
         System.out.println(sb);
     }
 }
