@@ -20,8 +20,7 @@
 // Count positive and negative numbers.
 // Count zero elements.
 // Search an element in an array.
-// Count how many times a given element occurs.
-// Copy one array into another array.
+// Count how many times a given element occurs..
 
 // 🟠 Important Interview Questions
 // Reverse an array.
