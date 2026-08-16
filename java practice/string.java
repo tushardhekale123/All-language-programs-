@@ -268,7 +268,7 @@
 // }
 
 
-// Delete
+// Delete.
 
 // class string {
 //     public static void main(String[] args) {
