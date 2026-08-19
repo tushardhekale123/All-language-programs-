@@ -88,3 +88,23 @@
 
 
 // Bank Account 
+
+class BankAccount {
+    String acoountHolder;
+    int accountNumber;
+    double balance;
+
+    void deposite (double amount) {
+        balance = balance + amount;
+        System.out.println("Deposite = " + amount );
+        System.out.println(balance);
+    }
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance = balance - amount ;
+            System.out.println("Withdrawn = " +amount );
+        } else {
+            System.out.println("Insufficient Balance");
+        }
+    }
+}
