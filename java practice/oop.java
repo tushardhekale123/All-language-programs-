@@ -1,26 +1,57 @@
-class Student {
-    String name;
-    int age;
-    String college;
+// class Student {
+//     String name;
+//     int age;
+//     String college;
      
-    void study() {
-        System.out.println("Student is studying...");
+//     void study() {
+//         System.out.println("Student is studying...");
+//     }
+// }
+// public class oop {
+//     public static void main(String[] args) {
+         
+//         Student s1 = new Student();
+
+//         s1.name = "Tushar";
+//         s1.age = 21;
+//         s1.college = "Sipna college";
+
+//         System.out.println(s1.name);
+//         System.out.println(s1.age);
+//         System.out.println(s1.college);
+
+//         s1.study();
+
+//     }
+// }
+
+class Car {
+    String brand;
+    String color;
+
+    void drive() {
+        System.out.println(brand +"is driving");
     }
 }
 public class oop {
     public static void main(String[] args) {
-         
-        Student s1 = new Student();
+        Car c1 = new Car();
 
-        s1.name = "Tushar";
-        s1.age = 21;
-        s1.college = "Sipna college";
+        c1.brand = "BMW";
+        c1.color = "Black";
 
-        System.out.println(s1.name);
-        System.out.println(s1.age);
-        System.out.println(s1.college);
+        Car c2 = new Car(); 
 
-        s1.study();
+        c2.brand = "Audi";
+        c2.color = "White";
 
+        System.out.println(c1.brand);
+        System.out.println(c1.color);
+
+        System.out.println(c2.brand);
+        System.out.println(c2.brand);
+
+        c1.drive();
+        c2.drive();
     }
 }
