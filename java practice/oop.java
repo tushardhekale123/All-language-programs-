@@ -61,22 +61,22 @@
 // }
 
 
-class Rectangle {
-    int length;
-    int width;
+// class Rectangle {
+//     int length;
+//     int width;
 
-    void main () {
-        int area = length * width;
-        System.out.println(area);
-    }
-}
-public class oop {
-    public static void main(String[] args) {
-        Rectangle r1 = new Rectangle();
+//     void main () {
+//         int area = length * width;
+//         System.out.println(area);
+//     }
+// }
+// public class oop {
+//     public static void main(String[] args) {
+//         Rectangle r1 = new Rectangle();
 
-        r1.length = 10;
-        r1.width = 5;
+//         r1.length = 10;
+//         r1.width = 5;
 
-        r1.main();
-    }
-}
+//         r1.main();
+//     }
+// }
