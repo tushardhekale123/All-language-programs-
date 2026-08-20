@@ -176,79 +176,91 @@
 //     } 
 // }
 
-import java.util.Scanner;
 
-class BankAcount {
-    String accountHolder;
-    int accountNumber;
-    double balance;
 
-    void diposite(double amount) {
-        balance = balance + amount;
-        System.out.println("Diposite = " + amount );
-        System.out.println("Current Balance = " + balance );
-    }
-    void withdraw (double amount) {
-        if (amount <= balance) {
-            balance = balance - amount ;
-            System.out.println("Withdraw = " + amount );
-            System.out.println("Current Balance = " + balance);
-        } else {
-            System.out.println("Insufficient Balance");
-        }
-    }
-    void displayBalance() {
-        System.out.println("Current Balance = " + balance);
-    }
-}
-public class oop {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        BankAcount account = new BankAcount();
+// proper bank System 
 
-        System.out.println("Enter Account Holder Name = ");
-        account.accountHolder = sc.nextLine();
+// import java.util.Scanner;
 
-        System.out.println("Enter Account Number = ");
-        account.accountNumber = sc.nextInt();
+// class BankAcount {
+//     String accountHolder;
+//     int accountNumber;
+//     double balance;
 
-        account.balance = 10000;
+//     void diposite(double amount) {
+//         balance = balance + amount;
+//         System.out.println("Diposite = " + amount );
+//         System.out.println("Current Balance = " + balance );
+//     }
+//     void withdraw (double amount) {
+//         if (amount <= balance) {
+//             balance = balance - amount ;
+//             System.out.println("Withdraw = " + amount );
+//             System.out.println("Current Balance = " + balance);
+//         } else {
+//             System.out.println("Insufficient Balance");
+//         }
+//     }
+//     void displayBalance() {
+//         System.out.println("Current Balance = " + balance);
+//     }
+// }
+// public class oop {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         BankAcount account = new BankAcount();
 
-        System.out.println(" Account Create Successfully!");
-        account.displayBalance();
+//         System.out.println("Enter Account Holder Name = ");
+//         account.accountHolder = sc.nextLine();
 
-        while (true) {
-             System.out.println("----- BANK MENU -----");
-            System.out.println("1. Deposit");
-            System.out.println("2. Withdraw");
-            System.out.println("3. Check Balance");
-            System.out.println("4. Exit");
+//         System.out.println("Enter Account Number = ");
+//         account.accountNumber = sc.nextInt();
 
-            System.out.println("Enter your choice");
-            int choice = sc.nextInt();
+//         account.balance = 10000;
 
-            if (choice == 1) {
-                System.out.println("Enter Diposite Amount = ");
-                double amount = sc.nextDouble();
+//         System.out.println(" Account Create Successfully!");
+//         account.displayBalance();
 
-                account.diposite(amount);
+//         while (true) {
+//              System.out.println("----- BANK MENU -----");
+//             System.out.println("1. Deposit");
+//             System.out.println("2. Withdraw");
+//             System.out.println("3. Check Balance");
+//             System.out.println("4. Exit");
 
-            } else if (choice == 2) {
-                System.out.println("Enter Withdraw Amount = ");
-                double amount = sc.nextDouble();
+//             System.out.println("Enter your choice");
+//             int choice = sc.nextInt();
 
-                account.withdraw(amount);
+//             if (choice == 1) {
+//                 System.out.println("Enter Diposite Amount = ");
+//                 double amount = sc.nextDouble();
 
-            }else if (choice == 3) {
-                account.displayBalance();
+//                 account.diposite(amount);
 
-            }else if (choice == 4 ) {
-                System.out.println("Thank You");
-                break;
+//             } else if (choice == 2) {
+//                 System.out.println("Enter Withdraw Amount = ");
+//                 double amount = sc.nextDouble();
 
-            }else {
-                System.out.println("Invalid Choice!");
-            }
-        }
-    }
-}
+//                 account.withdraw(amount);
+
+//             }else if (choice == 3) {
+//                 account.displayBalance();
+
+//             }else if (choice == 4 ) {
+//                 System.out.println("Thank You");
+//                 break;
+
+//             }else {
+//                 System.out.println("Invalid Choice!");
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+// ...............Constructer...........................
+
