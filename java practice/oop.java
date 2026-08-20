@@ -285,19 +285,21 @@
 // }
 
 
-class student {
-    String name;
-    int age;
+// parameterizzed constructer
 
-    student(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-}
-public class oop  {
-    public static void main(String[] args) {
-        student s1 = new student("Tushar",21);
-        System.out.println("name = " + s1.name);
-        System.out.println("age = " + s1.age);
-    }
-}
+// class student {
+//     String name;
+//     int age;
+
+//     student(String name, int age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+// public class oop  {
+//     public static void main(String[] args) {
+//         student s1 = new student("Tushar",21);
+//         System.out.println("name = " + s1.name);
+//         System.out.println("age = " + s1.age);
+//     }
+// }
