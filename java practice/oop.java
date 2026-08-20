@@ -264,3 +264,19 @@
 
 // ...............Constructer...........................
 
+class Student {
+    String name;
+    int age;
+
+    Student() {
+        name = "n";
+        age = 0;
+    }
+}
+public class oop {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        System.out.println(s1.name);
+        System.out.println(s1.age);
+    }
+}
