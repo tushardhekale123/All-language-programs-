@@ -398,15 +398,27 @@
 class BankAccount {
     private double balance ;
 
-    private void deposite (double amount) {
+    public void deposite(double amount) {
         if (amount > 0) {
             balance = amount + balance ;
         }
     }
-    private void withdraw (double amount ) {
+    public void withdraw(double amount ) {
         if (amount <= balance && amount > 0 ) {
             balance = balance - amount ;
         }
     }
-
+    public double getBalance() {
+        return balance;
+    }
+}
+public class oop {
+    public static void main(String[] args) {
+         
+        BankAccount s1 = new BankAccount();
+        
+        s1.deposite (50000);
+        s1.withdraw(2000);
+        System.out.println("Balance: " + s1.getBalance());
+    }
 }
