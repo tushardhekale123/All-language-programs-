@@ -374,15 +374,16 @@ class student {
     student (String name,int age) {
      this.name = name;
      this.age = age;
-     
+    }
+    void display () {
+        System.out.println("kay kart aahe ");
     }
 }
 public class oop {
 
     public static void main(String[] args) {
         student s1 = new student ("Tushar",45);
-
-        
         System.out.println(s1.name);
+        s1.display();
     }
 }
