@@ -324,3 +324,23 @@
 //         System.out.println(s2.name + s2.age);
 //     }
 // }
+
+
+
+// this instance method
+
+class student {
+    String name;
+
+    void display() {
+        System.out.println(this.name);
+    }
+}
+public class oop {
+    public static void main(String[] args) {
+        student s1 = new student();
+
+        s1.name ="Tushar";
+        s1.display();
+    }
+}
