@@ -155,6 +155,7 @@
 // }
 // public class oop {
 //     public static void main(String[] args) {
+
 //     Scanner sc = new Scanner(System.in);
 //     BankAccount account = new BankAccount();
 
@@ -165,8 +166,8 @@
 //     account.displayBalance();
 
 //     System.out.println("Enter Deposit Amount :-");
-//     double dipositeAmount = sc.nextDouble();
-//     account.deposite(dipositeAmount);
+//     double diposite = sc.nextDouble();
+//     account.deposite(diposite);
 
 //     System.out.println("Enter withdraw Amount");
 //     double withdraw = sc.nextDouble();
@@ -367,23 +368,45 @@
 // }
 
 
-class student {
-    String name ;
-    int age ;
+// class student {
+//     String name ;
+//     int age ;
  
-    student (String name,int age) {
-     this.name = name;
-     this.age = age;
-    }
-    void display () {
-        System.out.println("kay kart aahe ");
-    }
-}
-public class oop {
+//     student (String name,int age) {
+//      this.name = name;
+//      this.age = age;
+//     }
+//     void display () {
+//         System.out.println("kay kart aahe ");
+//     }
+// }
+// public class oop {
 
-    public static void main(String[] args) {
-        student s1 = new student ("Tushar",45);
-        System.out.println(s1.name);
-        s1.display();
+//     public static void main(String[] args) {
+//         student s1 = new student ("Tushar",45);
+//         System.out.println(s1.name);
+//         s1.display();
+//     }
+// }
+
+
+
+
+// ....................Encapsulation...................
+ 
+
+class BankAccount {
+    private double balance ;
+
+    private void deposite (double amount) {
+        if (amount > 0) {
+            balance = amount + balance ;
+        }
     }
+    private void withdraw (double amount ) {
+        if (amount <= balance && amount > 0 ) {
+            balance = balance - amount ;
+        }
+    }
+
 }
