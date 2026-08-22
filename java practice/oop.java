@@ -306,21 +306,21 @@
 
 
 
-class student {
-    String name ;
-    int age ;
+// class student {
+//     String name ;
+//     int age ;
 
-    student (String name, int age ) {
-        this.name = name ;
-        this.age = age;
-    }
-}
-public class oop {
-    public static void main(String[] args) {
-        student s1 = new student("Tushar",21);
-        student s2 = new student("Munna ",34);
+//     student (String name, int age ) {
+//         this.name = name ;
+//         this.age = age;
+//     }
+// }
+// public class oop {
+//     public static void main(String[] args) {
+//         student s1 = new student("Tushar",21);
+//         student s2 = new student("Munna ",34);
 
-        System.out.println(s1.name);
-        System.out.println(s2.name + s2.age);
-    }
-}
+//         System.out.println(s1.name);
+//         System.out.println(s2.name + s2.age);
+//     }
+// }
