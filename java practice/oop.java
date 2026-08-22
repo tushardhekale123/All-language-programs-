@@ -346,20 +346,43 @@
 // }
 
 
-class student {
-    String name;
-    int age ;
+// ..............practice code 1..................
 
-    student() {
-        name = "Tushar";
-        age = 21;
+// class student {
+//     String name;
+//     int age ;
+
+//     student() {
+//         name = "Tushar";
+//         age = 21;
+//     }
+// }
+// public class oop {
+//     public static void main(String[] args) {
+//         student s1 = new student();
+
+//         System.out.println(s1.name);
+
+//     }
+// }
+
+
+class student {
+    String name ;
+    int age ;
+ 
+    student (String name,int age) {
+     this.name = name;
+     this.age = age;
+     
     }
 }
 public class oop {
+
     public static void main(String[] args) {
-        student s1 = new student();
+        student s1 = new student ("Tushar",45);
 
+        
         System.out.println(s1.name);
-
     }
 }
